@@ -1,10 +1,29 @@
+<main class="content">
+  <section class="video" id="main-video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ojDahcLUedk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
 
-    
-    <main class = content>
+  <section class="songs-container">
+    <h3 class="section-title">Latest Songs</h3>
+    {{#each songs}}
+      {{> song}}
+    {{/each}}
+  </section>
 
-        <p>stuff</p>
+  <div class="sketches">
+    {{#each sketches}}
+      {{> sketch}}
+    {{/each}}
+  </div>
 
-
-    </main>
+  <section id="shows-info">
+    <h3 class="section-title">Where to see him</h3>
+    <ul class="shows-list">
+      <li class="show">
+        <p class="show-location"></p><p class="show-date"></p>
+      </li>
+    </ul>
+  </section>
+</main>
 
 
