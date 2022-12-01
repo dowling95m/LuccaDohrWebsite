@@ -27,9 +27,7 @@ app.get('/about', function(req, res, next) {
 })
 
 app.get('/paintings', function(req, res, next) {
-  res.status(200).render('paintings', {
-    paintings: paintings
-  })
+  res.status(200).render('paintings', {paintings})
 })
 
 app.get('*', function(req, res, next){
