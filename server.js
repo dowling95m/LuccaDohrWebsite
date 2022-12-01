@@ -5,6 +5,7 @@ var exhbs = require('express-handlebars')
 var app = express();
 var port = process.env.PORT || 3000;
 
+var songs = require("./json_files/songs.json")
 
 app.engine('handlebars', exhbs.engine({
   defaultLayout: "main"
@@ -14,7 +15,9 @@ app.set('view engine', 'handlebars')
 app.use(express.static('public'));
 
 app.get('/', function(req, res, next){
-    res.status(200).render('lucca_dohr')
+    res.status(200).render('lucca_dohr', {
+        songs: songs
+    })
 })
 
 app.get('*', function(req, res, next){
