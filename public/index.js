@@ -2,10 +2,10 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementsByClassName("navbar")[0].style.padding = ".5em 0em";
-  } 
-//   else {
-//     document.getElementsByClassName("navbar").style.padding = "80px 10px";
-//   }
+  var header = document.querySelector("header")
+  header.classList.toggle("sticky", window.scrollY >0)
+  var nav_list = document.querySelector("header")
+  nav_list.classList.toggle("sticky_nav", window.scrollY >0)
+
+
 }

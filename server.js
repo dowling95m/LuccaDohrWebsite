@@ -15,9 +15,7 @@ app.set('view engine', 'handlebars')
 app.use(express.static('public'));
 
 app.get('/', function(req, res, next){
-    res.status(200).render('lucca_dohr', {
-        songs: songs
-    })
+    res.status(200).render('lucca_dohr')
 })
 
 app.get('*', function(req, res, next){

@@ -1,6 +1,8 @@
 header {
+    margin-top: 3em;
     background-color: white;
     text-align: center;
+    transition: 1s;
     
 }
 
@@ -18,22 +20,30 @@ header a {
     /* display: flex; */
     /* align-items: center; */
     background-color: white;
+    position:fixed;
+    margin-bottom: 2em;
     
+    width: 100%;
+
+    /* justify-content: space-between; */
     width:100%;
     left:0;
     right:0;
     text-align: center;
+    transition: 1s;
+    
    
 }
-div.social-links{
-    /* display: inline-block; */
-    text-align: center;
+
+.navbar.sticky_nav{
+    position: fixed;
+    top: 0px;
+    padding-bottom: 1em;
 }
-ul.socials-list{
-    display:inline-block;
-    /* background-color: black; */
-    text-align: left;
-    padding: 0;
+
+header.sticky{
+    display: none;    
+
 }
 
 nav a{
@@ -42,6 +52,13 @@ nav a{
     text-decoration: none;
     margin: 20px;
     text-align: center;
+}
+
+.navlist{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav a:hover{
@@ -61,10 +78,36 @@ nav ul {
 }
 
 
-body{
-    margin:0px;
+#main-video{
+    margin:2em;
+    
+    text-align: center;
+
 }
 
+
+
+div.social-links{
+    /* display: inline-block; */
+    text-align: center;
+}
+ul.socials-list{
+    display:inline-block;
+    /* background-color: black; */
+    text-align: left;
+    padding: 0;
+}
+
+
+
+body{
+    margin-top:-2em;
+    padding: 0px;
+    min-height: 200vh;
+}
+main{
+    /* margin-top: 6em; */
+}
 p{
     text-align: center;
     font-family: 'Rock Salt', cursive;
