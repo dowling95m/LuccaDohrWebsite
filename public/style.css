@@ -25,6 +25,14 @@ header a {
     text-align: center;
    
 }
+div.social-links{
+    /* display: inline-block; */
+    text-align: center;
+}
+ul.socials-list{
+    /* display: list-item; */
+    align-items: center;
+}
 
 nav a{
     font-family: 'Rock Salt', cursive;
