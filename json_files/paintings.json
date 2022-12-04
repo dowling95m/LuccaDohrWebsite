@@ -1,17 +1,22 @@
 [
     {
         "title": "Painting 1",
-        "url": "DOHR 1.jpg",
+        "url": "./contentDownloads/painting1.jpg",
         "description": ""
     },
     {
         "title": "Painting 2",
-        "url": "DOHR 44.jpg",
+        "url": "./contentDownloads/painting2.jpg",
         "description": ""
     },
     {
         "title": "Painting 3",
-        "url": "DOHR 2.jpg",
+        "url": "./contentDownloads/painting3.jpg",
+        "description": ""
+    },
+    {
+        "title": "Painting 4",
+        "url": "./contentDownloads/painting4.jpg",
         "description": ""
     }
 ]
