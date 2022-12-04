@@ -1,12 +1,17 @@
 header {
-    margin-top: 3em;
+    margin-top: 4em;
     background-color: white;
     text-align: center;
+    /* position:fixed; */
+    /* padding-bottom: 2em; */
+    width:100%;
+    /* display: inline-block; */
     transition: 1s;
     
 }
 
 header a {
+    
     font-family: 'Rock Salt', cursive;
     color: black;
     text-decoration: none;
@@ -20,9 +25,9 @@ header a {
     /* display: flex; */
     /* align-items: center; */
     background-color: white;
-    position:fixed;
-    margin-bottom: 2em;
+    /* position:fixed; */
     
+    /* margin-top: 6em; */
     width: 100%;
 
     /* justify-content: space-between; */
@@ -35,15 +40,21 @@ header a {
    
 }
 
+.content.sticky_content{
+    padding-top: 8em;
+}
+
 .navbar.sticky_nav{
     position: fixed;
     top: 0px;
-    padding-bottom: 1em;
+    /* border-bottom: 1em;
+    margin-top: 0em; */
+
+    /* padding-top: 1em; */
 }
 
 header.sticky{
-    display: none;    
-
+    height:0;
 }
 
 nav a{
@@ -105,9 +116,7 @@ body{
     padding: 0px;
     min-height: 200vh;
 }
-main{
-    /* margin-top: 6em; */
-}
+
 p{
     text-align: center;
     font-family: 'Rock Salt', cursive;
@@ -121,3 +130,27 @@ h3 {
     text-align: center;
     font-family: 'Rock Salt', cursive;
 }
+
+#ig-logo{
+    width: 25px;
+    height: 25px;
+
+}
+#sp-logo{
+    width: 20px;
+    height: 20px;
+    padding-bottom: .2em;
+}
+#ap-logo{
+    width: 25px;
+    height: 25px;
+}
+#yt-logo{
+    width: 25px;
+    padding-bottom: .25em;
+}
+
+.error-page{
+    padding-top: 10em;
+}
+
