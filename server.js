@@ -5,9 +5,10 @@ var exhbs = require('express-handlebars')
 var app = express();
 var port = process.env.PORT || 3000;
 
-var songs = require("./json_files/songs.json")
-var photos = require("./json_files/photos.json")
-var paintings = require("./json_files/paintings.json")
+var songsData = require("./json_files/songs.json")
+var photosData = require("./json_files/photos.json")
+var paintingsData = require("./json_files/paintings.json")
+var sketchesData = require('./json_files/sketches.json')
 
 app.engine('handlebars', exhbs.engine({
   defaultLayout: "main"
@@ -17,17 +18,22 @@ app.set('view engine', 'handlebars')
 app.use(express.static('public'));
 
 app.get('/', function(req, res, next){
-    res.status(200).render('lucca_dohr')
+    res.status(200).render('lucca_dohr', {
+      songs: songsData,
+      sketches: sketchesData
+    })
 })
 
 app.get('/about', function(req, res, next) {
   res.status(200).render('about', {
-    photos: photos
+    photos: photosData
   })
 })
 
 app.get('/paintings', function(req, res, next) {
-  res.status(200).render('paintings', {paintings})
+  res.status(200).render('paintings', {
+    paintings: paintingsData
+  })
 })
 
 app.get('*', function(req, res, next){
