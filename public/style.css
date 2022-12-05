@@ -169,3 +169,31 @@ h3 {
     padding:1em;
     display: inline-block;
 }
+
+.video-container{
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    
+    /* text-align: center; */
+}
+
+.image-container img{
+    /* position: relative; */
+
+    max-width: 8em;
+}
+
+.sketches-right-sketches{
+    align-items: right;
+    margin: auto;
+}
+
+.sketches-left-sketches{
+    align-items: left;
+    margin: auto;
+}
+#main-video{
+    align-items: center;
+    margin: auto;
+}
