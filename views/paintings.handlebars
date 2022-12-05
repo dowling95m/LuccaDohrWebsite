@@ -1,5 +1,9 @@
 <main class="content">
   <h3 class="section-title">Paintings</h3>
+  <div class="full-img" id = "fullImgBox">
+    <img src = "./contentDownloads/painting1.jpg" id = "fullImg">
+    <span onclick= "closeFullImg()" >X</span>
+  </div> 
   <section class="paintings">
     {{#each paintings}}
       {{> painting}}

@@ -12,13 +12,16 @@ function scrollFunction() {
 
 }
 
-var paintings = document.getElementsByClassName('painting')
+var fullImgBox = document.getElementById("fullImgBox")
+var fullImg = document.getElementById("fullImg")
 
-for(var i = 0; i < paintings.length; i++){
-  paintings[i].addEventListener('click', function photoGallery(Event){
-    console.log("painting ", i, " was clicked!!")
-    console.log("event.currenttarget: ", Event.currentTarget)
-    console.log("the length of the paintings array is", paintings.length)
-  })
-
+function openFullImg(pic){
+  fullImgBox.style.display = "flex"
+  fullImg.src = pic
 }
+
+function closeFullImg(){
+  fullImgBox.style.display = "none";
+}
+
+
