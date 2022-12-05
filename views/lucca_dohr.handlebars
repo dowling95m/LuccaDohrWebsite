@@ -1,5 +1,9 @@
 <main class="content">
   <section class="video-container">
+  <div class="full-img" id = "fullImgBox">
+    <img src = "./contentDownloads/painting1.jpg" id = "fullImg">
+    <span onclick= "closeFullImg()" >X</span>
+  </div> 
     <div class="sketches-left-sketches">
       {{#each leftSketches}}
         {{> sketch}}
@@ -10,6 +14,10 @@
       <source src="./contentDownloads/FOREVERPT.1.mp4" type="video/mp4">
     </video>
 
+  <div class="full-img" id = "fullImgBox">
+    <img src = "./contentDownloads/painting1.jpg" id = "fullImg">
+    <span onclick= "closeFullImg()" >X</span>
+  </div> 
     <div class="sketches-right-sketches">
       {{#each rightSketches}}
         {{> sketch}}
