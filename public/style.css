@@ -36,6 +36,8 @@ header a {
     right:0;
     text-align: center;
     transition: 1s;
+
+    z-index: 999;
     
    
 }
@@ -51,6 +53,7 @@ header a {
     margin-top: 0em; */
 
     /* padding-top: 1em; */
+    z-index: 1000;
 }
 
 header.sticky{
@@ -168,32 +171,4 @@ h3 {
 .video{
     padding:1em;
     display: inline-block;
-}
-
-.video-container{
-    /* text-align: center; */
-    display: flex;
-    align-items: center;
-    
-    /* text-align: center; */
-}
-
-.image-container img{
-    /* position: relative; */
-
-    max-width: 8em;
-}
-
-.sketches-right-sketches{
-    align-items: right;
-    margin: auto;
-}
-
-.sketches-left-sketches{
-    align-items: left;
-    margin: auto;
-}
-#main-video{
-    align-items: center;
-    margin: auto;
 }

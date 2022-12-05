@@ -48,6 +48,12 @@ app.get('/videos', function(req, res, next) {
   })
 })
 
+app.get('/music', function(req, res, next) {
+  res.status(200).render('music', {
+    songs: songsData
+  })
+})
+
 app.get('*', function(req, res, next){
     res.status(404).render('404')
 })
