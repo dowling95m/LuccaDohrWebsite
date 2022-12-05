@@ -180,7 +180,7 @@ h3 {
     /* text-align: center; */
 }
 
-.image-container img{
+.sketch .image-container img{
     /* position: relative; */
 
     max-width: 8em;
@@ -199,3 +199,25 @@ h3 {
     align-items: center;
     margin: auto;
 }
+
+
+.paintings{
+    margin: 10px 50px;
+    text-align: center;
+  }
+
+.painting{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+  .paintings img{
+    transition: 1s;
+    padding: 15px;
+    height: 350px;
+  }
+
+  .paintings img:hover{
+    /* filter: grayscale(60%); */
+    transform: scale(1.05)
+  }
