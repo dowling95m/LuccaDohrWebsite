@@ -1,6 +1,20 @@
 <main class="content">
-  <section class="video" id="main-video">
-    <iframe width="1120" height="630" src="https://www.youtube.com/embed/ojDahcLUedk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <section class="video-container">
+    <div class="sketches left-sketches">
+      {{#each leftSketches}}
+        {{> sketch}}
+      {{/each}}
+    </div>
+
+    <video id="main-video" width="540" height="675" autoplay loop controls muted>
+      <source src="./contentDownloads/FOREVERPT.1.mp4" type="video/mp4">
+    </video>
+
+    <div class="sketches right-sketches">
+      {{#each rightSketches}}
+        {{> sketch}}
+      {{/each}}
+    </div>
   </section>
 
   <section class="songs-container">
@@ -9,12 +23,6 @@
       {{> song}}
     {{/each}}
   </section>
-
-  <div class="sketches">
-    {{#each sketches}}
-      {{> sketch}}
-    {{/each}}
-  </div>
 
   <section id="shows-info">
     <h3 class="section-title">Where to see him</h3>
