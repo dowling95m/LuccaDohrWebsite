@@ -11,3 +11,14 @@ function scrollFunction() {
 
 
 }
+
+var paintings = document.getElementsByClassName('painting')
+
+for(var i = 0; i < paintings.length; i++){
+  paintings[i].addEventListener('click', function photoGallery(Event){
+    console.log("painting ", i, " was clicked!!")
+    console.log("event.currenttarget: ", Event.currentTarget)
+    console.log("the length of the paintings array is", paintings.length)
+  })
+
+}
