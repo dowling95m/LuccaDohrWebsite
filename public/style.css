@@ -114,7 +114,7 @@ ul.socials-list{
 body{
     margin-top:-2em;
     padding: 0px;
-    min-height: 200vh;
+    /* min-height: 200vh; */
 }
 
 p{
@@ -150,7 +150,22 @@ h3 {
     padding-bottom: .25em;
 }
 
-.error-page{
-    padding-top: 10em;
+.song{
+    display:inline;
+    
+}
+.songs-container{
+    text-align:center;
+
+}
+.sketches{
+    position: absolute;
 }
 
+.videos{
+    text-align: center;
+}
+.video{
+    padding:1em;
+    display: inline-block;
+}
