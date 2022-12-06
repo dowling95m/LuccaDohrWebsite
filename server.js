@@ -9,11 +9,7 @@ var songsData = require("./json_files/songs.json")
 var photosData = require("./json_files/photos.json")
 var paintingsData = require("./json_files/paintings.json")
 var videosData = require('./json_files/musicvids.json')
-
 var sketchesData = require('./json_files/sketches.json')
-var midPoint = Math.ceil(sketchesData.length / 2)
-var leftSketches = sketchesData.slice(0, midPoint)
-var rightSketches = sketchesData.slice(midPoint) 
 
 app.engine('handlebars', exhbs.engine({
   defaultLayout: "main"
@@ -25,8 +21,7 @@ app.use(express.static('public'));
 app.get('/', function(req, res, next){
     res.status(200).render('lucca_dohr', {
       songs: songsData,
-      leftSketches: leftSketches,
-      rightSketches: rightSketches
+      sketches: sketchesData,
     })
 })
 
