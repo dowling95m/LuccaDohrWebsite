@@ -7,4 +7,17 @@
       Perferendis beatae iste enim impedit atque! Tempore autem quae alias dolorum dicta perferendis id animi perspiciatis commodi quaerat. Sapiente cumque quidem eaque.
     </p>
   </section>
+  <section class="portrait-images">
+    
+    <div class="full-img" id = "fullImgBox">
+      <img src = "./contentDownloads/AboutPic.jpg" id = "fullImg">
+      <span onclick= "closeFullImg()" >X</span>
+    </div> 
+
+    {{#each photos}}
+      {{> photo}}
+    {{/each}}
+    
+  </section>
+  </section>
 </main>
