@@ -16,14 +16,10 @@
 
     
 
-  <section class = "sketches">
-    <div class="sketches-right-sketches">
-        {{#each rightSketches}}
-          {{> sketch}}
-        {{/each}}
-      </div>
-      <div class="sketches-left-sketches">
-        {{#each leftSketches}}
+  <section class="sketches-containter">
+    
+    <div class="sketches">
+        {{#each sketches}}
           {{> sketch}}
         {{/each}}
       </div>
