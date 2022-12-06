@@ -104,6 +104,7 @@ nav ul {
 div.social-links{
     /* display: inline-block; */
     text-align: center;
+    padding-top: 4em;
 }
 ul.socials-list{
     display:inline-block;
@@ -153,10 +154,7 @@ h3 {
     padding-bottom: .25em;
 }
 
-.song{
-    display:inline;
-    
-}
+
 .songs-container{
     text-align:center;
 
@@ -244,10 +242,21 @@ cursor: pointer;
 
 .portrait-images img{
     max-width: 20em;
+   
+}
+.portrait-images{
+    display: inline-block;
+    
+    align-items: right;
+}
+.portrait-images .full-img img{
+    height: 600px;
+    max-width: fit-content;
+
 }
 .about-info{
-    /* align-items: center; */
-    display: flex;
+    
+    display: inline-flex;
 }
 
 
@@ -330,6 +339,9 @@ cursor: pointer;
     padding: 10px;
 }
 
+.songs-container iframe{
+    border:none;
+}
 .songs iframe{
     /* transition: 1s; */
     /* padding: 10px; */
