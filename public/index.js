@@ -29,10 +29,23 @@ sketches = document.getElementsByClassName('sketch')
 var screenWidth = window.innerWidth
 var screenHeight = window.innerHeight
 
+function generateRandomNumber(min, max) {
+  return parseFloat(Math.floor(Math.random() * (max - min) + min).toFixed(2))
+
+}
+
 for(var i = 0; i < sketches.length; i++) {
   sketches[i].style.position = "absolute"
-  sketches[i].style.top = Math.random() * screenHeight + "px"
-  sketches[i].style.left = Math.random() * screenWidth + "px"
+  sketches[i].style.bottom = (Math.random()*2-1) * (screenHeight/2) + "px"
+  if(i%2 === 0){
+    sketches[i].style.left = Math.random() * (screenWidth/4 ) + "px"
+  }
+  else{
+    sketches[i].style.right = Math.random() * (screenWidth/4 ) + "px"
+  }
+ 
+
+
 }
 
 
