@@ -28,6 +28,24 @@
         "url":"https://open.spotify.com/embed/track/1ExZ69RqT3QVYyjylGigaG?utm_source=generator",
         "primary":"#7a7584",
         "secondary":"#282828"
+    },
+    {
+        "title":"Alexa",
+        "url":"https://open.spotify.com/embed/track/7I551g3VA9cb1H3pLbTLtf?utm_source=generator",
+        "primary":"#7a7584",
+        "secondary":"#282828"
+    },
+    {
+        "title":"Nobody's Speaking",
+        "url":"https://open.spotify.com/embed/track/4Jatoixf2CsC8CBpVBk53r?utm_source=generator",
+        "primary":"#7f7f7f",
+        "secondary":"#282828"
+    },
+    {
+        "title":"Nobody's Speaking",
+        "url":"https://open.spotify.com/embed/track/6c43oj6GpL9zFuIi1rV2w3?utm_source=generator",
+        "primary":"#c45707",
+        "secondary":"#282828"
     }
 
 ]
