@@ -24,4 +24,17 @@ function closeFullImg(){
   fullImgBox.style.display = "none";
 }
 
+sketches = document.getElementsByClassName('sketch')
+
+var screenWidth = window.innerWidth
+var screenHeight = window.innerHeight
+
+for(var i = 0; i < sketches.length; i++) {
+  sketches[i].style.position = "absolute"
+  sketches[i].style.top = Math.random() * screenHeight + "px"
+  sketches[i].style.left = Math.random() * screenWidth + "px"
+}
+
+
+
 
