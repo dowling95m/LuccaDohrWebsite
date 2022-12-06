@@ -9,7 +9,8 @@ var songsData = require("./json_files/songs.json")
 var photosData = require("./json_files/photos.json")
 var paintingsData = require("./json_files/paintings.json")
 var videosData = require('./json_files/musicvids.json')
-var sketchesData = require('./json_files/sketches.json')
+var sketchesData = require('./json_files/sketches.json');
+const { dirname } = require('path');
 
 app.engine('handlebars', exhbs.engine({
   defaultLayout: "main"
@@ -47,6 +48,10 @@ app.get('/music', function(req, res, next) {
   res.status(200).render('music', {
     songs: songsData
   })
+})
+
+app.get('/json_files/songs.json', function(req, res, next) {
+  res.status(200).sendFile(__dirname + '/json_files/songs.json')
 })
 
 app.get('*', function(req, res, next){
