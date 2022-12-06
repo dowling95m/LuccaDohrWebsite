@@ -1,23 +1,26 @@
 <main class="content">
-  <section class="info">
-    <h3 class="title">About</h3>
+  <h3 class="title">About</h3>
+  <section class="about-info">
+    <section class="portrait-images">
+    
+      <div class="full-img" id = "fullImgBox">
+        <img src = "./contentDownloads/AboutPic.jpg" id = "fullImg">
+        <span onclick= "closeFullImg()" >X</span>
+      </div> 
+
+      {{#each photos}}
+        {{> photo}}
+      {{/each}}
+    
+    </section>
+    
     <p class="about-lucca">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam vel fuga facere at numquam consectetur soluta explicabo, possimus, 
       voluptatum accusantium ipsam ipsa exercitationem error porro consequuntur. Illum debitis fugiat voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit.
       Perferendis beatae iste enim impedit atque! Tempore autem quae alias dolorum dicta perferendis id animi perspiciatis commodi quaerat. Sapiente cumque quidem eaque.
     </p>
-  </section>
-  <section class="portrait-images">
-    
-    <div class="full-img" id = "fullImgBox">
-      <img src = "./contentDownloads/AboutPic.jpg" id = "fullImg">
-      <span onclick= "closeFullImg()" >X</span>
-    </div> 
-
-    {{#each photos}}
-      {{> photo}}
-    {{/each}}
     
   </section>
+  
   </section>
 </main>

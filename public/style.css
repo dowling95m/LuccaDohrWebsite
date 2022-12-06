@@ -204,40 +204,48 @@ h3 {
     vertical-align: middle;
 }
 
-  .paintings img{
-    transition: 1s;
-    padding: 15px;
-    height: 350px;
-    cursor: pointer;
-  }
+.paintings img{
+transition: 1s;
+padding: 15px;
+height: 350px;
+cursor: pointer;
+}
 
-  .paintings img:hover{
-    /* filter: grayscale(60%); */
-    transform: scale(1.05)
-  }
+.paintings img:hover{
+/* filter: grayscale(60%); */
+transform: scale(1.05)
+}
 
-  .full-img{
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 1001;
-  }
+.full-img{
+width: 100%;
+height: 100vh;
+background: rgba(0,0,0,0.9);
+position: fixed;
+top: 0;
+left: 0;
+display: none;
+align-items: center;
+justify-content: center;
+z-index: 1001;
+}
 
-  .full-img img{
-    height: 600px;
-  }
+.full-img img{
+height: 600px;
+}
 
-  .full-img span{
-    position: absolute;
-    height: 600px;
-    right: 15%;
-    font-size: 40px;
-    color: #fff;
-    cursor: pointer;
-  }
+.full-img span{
+position: absolute;
+height: 600px;
+right: 15%;
+font-size: 40px;
+color: #fff;
+cursor: pointer;
+}
+
+.portrait-images img{
+    max-width: 20em;
+}
+.about-info{
+    /* align-items: center; */
+    display: flex;
+}
