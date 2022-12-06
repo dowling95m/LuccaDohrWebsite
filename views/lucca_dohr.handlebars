@@ -5,21 +5,25 @@
       <span onclick= "closeFullImg()" >X</span>
     </div> 
 
-    <div class="sketches-left-sketches">
-      {{#each leftSketches}}
-        {{> sketch}}
-      {{/each}}
-    </div>
+    
 
     <video id="main-video" width="540" height="675" autoplay loop controls muted>
       <source src="./contentDownloads/FOREVERPT.1.mp4" type="video/mp4">
     </video>
 
-    <div class="sketches-right-sketches">
-      {{#each rightSketches}}
-        {{> sketch}}
-      {{/each}}
-    </div>
+    
+  </section>
+
+    
+
+  <section class="sketches-containter">
+    
+    <div class="sketches">
+        {{#each sketches}}
+          {{> sketch}}
+        {{/each}}
+      </div>
+
   </section>
 
   <section class="songs-container">
