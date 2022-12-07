@@ -94,7 +94,7 @@ nav ul {
 
 #main-video{
     margin:2em;
-    
+    z-index: 100;
     text-align: center;
 
 }
@@ -105,14 +105,18 @@ div.social-links{
     /* display: inline-block; */
     text-align: center;
     padding-top: 4em;
+    padding-bottom: 12em;
 }
 ul.socials-list{
     display:inline-block;
     /* background-color: black; */
     text-align: left;
-    padding: 0;
+    
 }
 
+.sketch{
+    position:absolute;
+}
 
 
 body{
@@ -159,9 +163,9 @@ h3 {
     text-align:center;
 
 }
-.sketches{
+/* .sketches{
     position: absolute;
-}
+} */
 
 .videos{
     text-align: center;

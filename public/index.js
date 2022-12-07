@@ -26,89 +26,40 @@ function closeFullImg(){
 
 sketches = document.getElementsByClassName('sketch')
 
-var screenWidth = window.innerWidth
-var screenHeight = window.innerHeight
 
-function generateRandomNumber(min, max) {
-  return parseFloat(Math.floor(Math.random() * (max - min) + min).toFixed(2))
+
+
+function place_sketches(){
+
+  sketches[0].style.bottom = "300px";
+  sketches[0].style.left = "20px";
+
+  sketches[1].style.bottom = "450";
+  sketches[1].style.left = "110px";
+
+  sketches[2].style.bottom = "75px";
+  sketches[2].style.left = "125px";
+
+  sketches[3].style.bottom = "550px";
+  sketches[3].style.left = "50px";
+
+  sketches[4].style.bottom = "250px";
+  sketches[4].style.left = "300px";
+
+
+  sketches[5].style.bottom = "300px";
+  sketches[5].style.left = "1720px";
+
+  sketches[6].style.bottom = "100px";
+  sketches[6].style.left = "1410px";
+
+  sketches[7].style.bottom = "350px";
+  sketches[7].style.left = "1350px";
+
+  sketches[8].style.bottom = "550px";
+  sketches[8].style.left = "1450px";
 
 }
-
-for(var i = 0; i < sketches.length; i++) {
-  sketches[i].style.position = "absolute"
-  sketches[i].style.bottom = (Math.random()*2-1) * (screenHeight/2) + "px"
-  if(i%2 === 0){
-    sketches[i].style.left = Math.random() * (screenWidth/4 ) + "px"
-  }
-  else{
-    sketches[i].style.right = Math.random() * (screenWidth/4 ) + "px"
-  }
- 
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // song hover shadow
@@ -143,3 +94,5 @@ function GetColorFromSong(song) {
     }
   }
 }
+
+place_sketches()
