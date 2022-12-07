@@ -34,30 +34,30 @@ function place_sketches(){
   sketches[0].style.bottom = "300px";
   sketches[0].style.left = "20px";
 
-  sketches[1].style.bottom = "450";
-  sketches[1].style.left = "110px";
+  sketches[1].style.bottom = "-50px";
+  sketches[1].style.left = "250px";
 
   sketches[2].style.bottom = "75px";
   sketches[2].style.left = "125px";
 
-  sketches[3].style.bottom = "550px";
-  sketches[3].style.left = "50px";
+  sketches[3].style.bottom = "0px";
+  sketches[3].style.left = "0px";
 
   sketches[4].style.bottom = "250px";
   sketches[4].style.left = "300px";
 
 
-  sketches[5].style.bottom = "300px";
-  sketches[5].style.left = "1720px";
+  sketches[5].style.bottom = "200px";
+  sketches[5].style.left = "1320px";
 
-  sketches[6].style.bottom = "100px";
-  sketches[6].style.left = "1410px";
+  sketches[6].style.bottom = "0px";
+  sketches[6].style.left = "1110px";
 
-  sketches[7].style.bottom = "350px";
-  sketches[7].style.left = "1350px";
+  sketches[7].style.bottom = "200px";
+  sketches[7].style.left = "1150px";
 
-  sketches[8].style.bottom = "550px";
-  sketches[8].style.left = "1450px";
+  sketches[8].style.bottom = "-100px";
+  sketches[8].style.left = "1250px";
 
 }
 
