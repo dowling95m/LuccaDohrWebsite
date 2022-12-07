@@ -29,35 +29,41 @@ sketches = document.getElementsByClassName('sketch')
 
 
 
+// function dont_place(){
+//   for (var i = 5; i < sketches.length; i++){
+//     sketches[i].style.display = "none"
+//   }
+// }
+// dont_place()
 function place_sketches(){
 
-  sketches[0].style.bottom = "300px";
-  sketches[0].style.left = "20px";
+  sketches[0].style.bottom = "45vh";
+  sketches[0].style.left = "2vw";
 
-  sketches[1].style.bottom = "-50px";
-  sketches[1].style.left = "250px";
+  sketches[1].style.bottom = "10vh";
+  sketches[1].style.left = "10vw";
 
-  sketches[2].style.bottom = "75px";
-  sketches[2].style.left = "125px";
+  sketches[2].style.bottom = "0vh";
+  sketches[2].style.left = "5vw";
 
-  sketches[3].style.bottom = "0px";
-  sketches[3].style.left = "0px";
+  sketches[3].style.bottom = "25vh";
+  sketches[3].style.left = "20vw";
 
-  sketches[4].style.bottom = "250px";
-  sketches[4].style.left = "300px";
+  sketches[4].style.bottom = "-15vh";
+  sketches[4].style.left = "20vw";
 
 
-  sketches[5].style.bottom = "200px";
-  sketches[5].style.left = "1320px";
+  sketches[5].style.bottom = "40vh";
+  sketches[5].style.left = "85vw";
 
-  sketches[6].style.bottom = "0px";
-  sketches[6].style.left = "1110px";
+  sketches[6].style.bottom = "30vh";
+  sketches[6].style.left = "75vw";
 
-  sketches[7].style.bottom = "200px";
-  sketches[7].style.left = "1150px";
+  sketches[7].style.bottom = "-15vh";
+  sketches[7].style.left = "70vw";
 
-  sketches[8].style.bottom = "-100px";
-  sketches[8].style.left = "1250px";
+  sketches[8].style.bottom = "0vh";
+  sketches[8].style.left = "85vw";
 
 }
 
